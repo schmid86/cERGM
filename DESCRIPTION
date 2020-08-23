@@ -7,7 +7,7 @@ Authors@R: c(
            person("Ted H.", "Chen", role=c("aut"), email="ted.hsuanyun.chen@gmail.com"),
    	   person("Bruce A.", "Desmarais", role=c("aut"), email="bdesmarais@psu.edu"))
 LinkingTo: ergm
-Depends: network (>= 1.15), ergm (>= 3.10.1)
+Depends: R (>= 3.5.0), network (>= 1.15), ergm (>= 3.10.1)
 Imports: statnet.common (>= 4.2.0)
 Description: A package to fit citation Exponential Random Graph Models (cERGM) as described in Schmid et al. (2020)
 License: GPL-3 + file LICENSE
