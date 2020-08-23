@@ -8,7 +8,7 @@
 \title{Terms used for the Citation-ERGM}
 
 \description{
-  This page documents the terms that can be used for fitting exponential random graph models of citation networks using the function \code{\link[cERGM]{cergm}} from the \code{\link[cERGM:cERGM-package]{cergm}} package.
+  This page documents the terms that can be used for fitting exponential random graph models of citation networks using the function \code{\link[cERGM]{cergm}} from the \code{\link[cERGM]{cergm}} package.
 
   The terms included here are used in the same manner as \code{\link[ergm]{ergm-terms}} from the base \code{ergm} package. This means that in addition to fitting ERGMs, they can be used for network simulation (\code{\link[ergm]{simulate.ergm}}) and assessing goodness-of-fit (\code{\link[ergm]{mcmc.diagnostics}} and \code{\link[ergm]{gof}}).
   }
