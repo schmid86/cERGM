@@ -63,7 +63,7 @@ cergm <- function(formula, not.fixed, estimate="MCMLE", init.method="SAN",
   return.list <- list(san.observed.statistics = san.observed.statistics,
                       san.starting.value=san.starting.value, ergm=model,  formula=formula,
                       observed.stat=obs, not.fixed=not.fixed.ergm )
-  class(return.list) <- c("cERGM" )
+  class(return.list) <- "cERGM"
   return(return.list)
 
 }
