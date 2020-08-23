@@ -1,0 +1,8 @@
+
+useDynLib(cERGM)
+
+import(network,ergm)
+importFrom(statnet.common)
+
+# Export all names
+exportPattern(".")

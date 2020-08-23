@@ -1,0 +1,18 @@
+Package: cERGM
+Version: 1.0.0
+Date: 2020-08-22
+Title: A package to fit citation Exponential Random Graph Models
+Authors@R: c(
+	   person("Christian S.", "Schmid", role=c("aut", "cre"), email="songhyo86@gmail.com"),
+           person("Ted H.", "Chen", role=c("aut"), email="ted.hsuanyun.chen@gmail.com"),
+   	   person("Bruce A.", "Desmarais", role=c("aut"), email="bdesmarais@psu.edu"))
+Depends: network (>= 1.15), ergm (>= 3.10.1)
+Description: A package to fit citation Exponential Random Graph Models (cERGM) as described in Schmid et al. (2020)
+License: GPL-3 + file LICENSE
+URL: github.com/schmid86/cERGM
+Author: Christian S. Schmid [aut, cre],
+  Ted H. Chen [aut],
+  Bruce A. Desmarais [aut]
+Maintainer: Christian S. Schmid <songhyo86@gmail.com>
+Encoding: UTF-8
+LazyData: true
