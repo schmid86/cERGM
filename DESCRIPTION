@@ -1,6 +1,6 @@
 Package: cERGM
-Version: 1.0.0
-Date: 2020-08-22
+Version: 1.0.1
+Date: 2021-05-07
 Title: A package to fit citation Exponential Random Graph Models
 Authors@R: c(
 	   person("Christian S.", "Schmid", role=c("aut", "cre"), email="songhyo86@gmail.com"),
