@@ -6,6 +6,7 @@ Authors@R: c(
 	   person("Christian S.", "Schmid", role=c("aut", "cre"), email="songhyo86@gmail.com"),
            person("Ted H.", "Chen", role=c("aut"), email="ted.hsuanyun.chen@gmail.com"),
    	   person("Bruce A.", "Desmarais", role=c("aut"), email="bdesmarais@psu.edu"))
+   	   person("Alex", "Stivala", role=c("ctb"), email="alex.d.stivala@gmail.com"))
 LinkingTo: ergm
 Depends: R (>= 3.5.0), network (>= 1.15), ergm (>= 3.10.1)
 Imports: statnet.common (>= 4.2.0)
@@ -14,7 +15,8 @@ License: GPL-3 + file LICENSE
 URL: github.com/schmid86/cERGM
 Author: Christian S. Schmid [aut, cre],
   Ted H. Chen [aut],
-  Bruce A. Desmarais [aut]
+  Bruce A. Desmarais [aut],
+  Alex Stivala [ctb]
 Maintainer: Christian S. Schmid <songhyo86@gmail.com>
 Encoding: UTF-8
 LazyData: true
