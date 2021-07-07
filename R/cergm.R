@@ -9,7 +9,30 @@ cergm <- function(formula, not.fixed, estimate="MCMLE", init.method="SAN",
     not.fixed.ergm <- network(not.fixed)
   }else{ # else 1
     if(is.vector(not.fixed)){
-      not.fixed.ergm <- network(matrix(not.fixed,length(not.fixed),length(not.fixed),byrow=F))
+      # convert vector of nodes which can have outgoing not.fixed ties to
+      # network object efficiently so that a (potentially huge) matrix
+      # is never created.
+      # This way:
+      #    not.fixed.ergm <- network(matrix(not.fixed,length(not.fixed),length(not.fixed),byrow=F))
+      # is simpler, shorter, and more elegant, but for large vectors is slower
+      # and can use huge amounts of memory due to the creation of a dense
+      # matrix object. (Unfortunately the network library, unlike igraph for
+      # example, does not seem to have the ability to use a sparse matrix object
+      # (from Matrix library for example) as the adjacency matrix directly
+      # (without implicit conversion to dense matrix object), which
+      # would be a simpler and more elegant way of solving this problem.)
+      not.fixed.edgelist.df <- data.frame(
+                           i = rep(which(not.fixed == 1),
+                                   each = length(not.fixed)),
+                           j = rep(1:length(not.fixed),
+                                   times = length(which(not.fixed == 1)))
+                                         )
+      # remove self-loops from edge list
+      not.fixed.edgelist.df <- not.fixed.edgelist.df[
+                                      which(not.fixed.edgelist.df$i !=
+                                            not.fixed.edgelist.df$j),
+                                                    ]
+      not.fixed.ergm <- network(not.fixed.edgelist.df, matrix.type="edgelist")
     }else{ # else 2
       if(is.network(not.fixed)){
         not.fixed.ergm <- not.fixed
