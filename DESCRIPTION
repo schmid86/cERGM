@@ -5,7 +5,7 @@ Title: A package to fit citation Exponential Random Graph Models
 Authors@R: c(
 	   person("Christian S.", "Schmid", role=c("aut", "cre"), email="songhyo86@gmail.com"),
            person("Ted H.", "Chen", role=c("aut"), email="ted.hsuanyun.chen@gmail.com"),
-   	   person("Bruce A.", "Desmarais", role=c("aut"), email="bdesmarais@psu.edu"))
+   	   person("Bruce A.", "Desmarais", role=c("aut"), email="bdesmarais@psu.edu"),
    	   person("Alex", "Stivala", role=c("ctb"), email="alex.d.stivala@gmail.com"))
 LinkingTo: ergm
 Depends: R (>= 3.5.0), network (>= 1.15), ergm (>= 3.10.1)
