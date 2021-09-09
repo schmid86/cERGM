@@ -10,7 +10,8 @@
     'Date:     ', desc$Date, '\n',
     'Authors:  Christian S Schmid (Pennsylvania State University)\n',
     '          Ted H Y Chen (University of Helsinki)\n',
-    '          Bruce A. Desmarais (Pennsylvania State University)',
+    '          Bruce A. Desmarais (Pennsylvania State University)\n',
+    'Contributor: Alex Stivala (University of Lugano)  \n',
     '\n\nPlease cite the cERGM package in your publications ',
     '-- see citation("cERGM").\n'
   )
